@@ -62,7 +62,7 @@ ul, ol {
 }
 #arrow img {
     opacity: 0.5;
-    animation: arrow 6s ease;
+    animation: arrow 7s ease;
 }
 #arrow img:hover {
     opacity: 0.7;
@@ -76,7 +76,7 @@ ul, ol {
 }
 @keyframes arrow {
     0% { opacity: 0.0; }
-    90% { opacity: 0.6; }
+    90% { opacity: 0.65; }
     100% { opacity: 0.69; }
 }
 @keyframes span {
