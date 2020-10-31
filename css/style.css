@@ -75,9 +75,8 @@ ul, ol {
     to { opacity: 1; }
 }
 @keyframes arrow {
-    0% { opacity: 0.3; }
-    90% { opacity: 0.5; }
-    100% { opacity: 0.6; }
+    0% { opacity: 0.0; }
+    100% { opacity: 0.69; }
 }
 @keyframes span {
    0% {
