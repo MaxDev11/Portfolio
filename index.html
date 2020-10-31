@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="id=edge">
+	<meta name="author" content="MaxML">
+	<meta name="description" content="MaxML portfolio">
+	<meta name="keywords" content="MaxML, portfolio, music, CS, programming, Tech, Drawing, Max, Art">
+	<link rel="shortcut icon" type="image/png" href="css/img/Icon.png">
+	<title>MaxML</title>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/anime-master/lib/anime.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style_media.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<!-- Section 1 -->
+	<div class="section__n1">
+		<main class="section__n1__main">
+			<h1>MaxML</h1>
+			<span id="text">HUMAN that likes to study and create things</span>
+		</main>
+		<span id="arrow"><a href="#sec2">
+			<img id="arrow_click" src="css/img/Arrow.png" alt="ArrowImg"></a>
+		</span>
+	</div>
+
+	<!-- Section 2 -->
+	<div class="section__n2" id="sec2">
+		<main class="section__n2__main">
+			<h1>About me</h1>
+			<div class="section__n2__main_p">
+				<p>Well...</p>
+				<p>My name is Max, as you may have already realized from my title:)</p>
+				<p>I like to study a lot of different things that I'm interested in,</p>
+				<p>Making my ideas come true and creating stuff in various areas</p>
+				<p>Such as, basically, everything digital (Computer Science, Programming, Tech),</p>
+				<p>Music, Design, Engineering, Art in general, and other</p>
+				<p>I created this Website as my Portfolio-Platform</p>
+				<p>For all the ideas that I come up with and create</p>
+			</div>
+		</main>
+		<span id="arrow"><a href="#sec3"><img id="arrow_click2" src="css/img/Arrow.png" alt="ArrowImg"></a></span>
+	</div>
+
+	<!-- Section 3 -->
+	<div class="section__n3" id="sec3" name="timeline">
+		<header>
+			<div class="header__icon">
+				<h1>MaxML</h1>
+			</div>
+			<nav class="header__sm">
+				<input type="checkbox" id="input">
+				<span id="menuBtn"></span>
+				<div class="menu"></div>
+				<ul class="list-items">
+					<li><a href="https://youtube.com/channel/UCZAXhZ1tG8_Dx3i76aW0x-g" target="_blank" id="sm1">
+						<img src="css/img/SM/YouTube.png" alt="YoutubeIcon"></a></li>
+					<li><a href="https://github.com/MaxDev11" target="_blank" id="sm2">
+						<img src="css/img/SM/Github.png" alt="GithubIcon"></a></li>
+					<li><a href="https://www.instagram.com/max_musicisl/" target="_blank" id="sm3">
+						<img src="css/img/SM/Instagram.png" alt="InstagramIcon"></a></li>
+					<li><a href="https://www.facebook.com/maxmusicl/" target="_blank" id="sm4">
+						<img src="css/img/SM/Facebook.png" alt="Facebook"></a></li>
+					<li><a href="https://twitter.com/maxmusicl" target="_blank" id="sm5">
+						<img src="css/img/SM/Twitter.png" alt="Twitter"></a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="section__n3__main">
+			<div class="main__projects">
+				<h2>My Projects</h2>
+				<ul>
+					<li>
+						<h3 onclick='projectBtn("proj1_list")'>Digital</h3>
+						<ol id="proj1_list">
+							<li>CS</li>
+							<li>WebDev</li>
+							<li>DesktopDev</li>
+							<li>MobileDev</li>
+							<li><a href="pages/Projects/DigitalP.html" id="btn1">Learn more</a></li>
+						</ol>
+					</li>
+					<li>
+						<h3 onclick='projectBtn("proj2_list")'>Music</h3>
+						<ol id="proj2_list">
+							<li>Production</li>
+							<li>Songs</li>
+							<li>(Empty)</li>
+							<li>(Empty)</li>
+							<li><a href="pages/Projects/MusicP.html" id="btn2">Learn more</a></li>
+						</ol>
+					</li>
+					<li>
+						<h3 onclick='projectBtn("proj3_list")'>Design</h3>
+						<ol id="proj3_list">
+							<li>WebDesign</li>
+							<li>DesktopDesign</li>
+							<li>MobileDesign</li>
+							<li>(Empty)</li>
+							<li><a href="pages/Projects/DesignP.html" id="btn3">Learn more</a></li>
+						</ol>
+					</li>
+					<li>
+						<h3 onclick='projectBtn("proj4_list")'>Art</h3>
+						<ol id="proj4_list">
+							<li>Drawings</li>
+							<li>(Empty)</li>
+							<li>(Empty)</li>
+							<li>(Empty)</li>
+							<li><a href="pages/Projects/ArtP.html" id="btn4">Learn more</a></li>
+						</ol>
+					</li>
+					<li>
+						<h3 onclick='projectBtn("proj5_list")'>Others</h3>
+						<ol id="proj5_list">
+							<li>(Empty)</li>
+							<li>(Empty)</li>
+							<li>(Empty)</li>
+							<li>(Empty)</li>
+							<li><a href="pages/Projects/Others.html" id="btn5">Learn more</a></li>
+						</ol>
+					</li>
+				</ul>
+			</div>
+			<div class="main__knowledge">
+				<h2>Knowledge Palace</h2>
+				<p>This section is my collection of knowledge, sources on different topics</p>
+				<p>As the times goes I'll be adding new information and updating old</p>
+				<a href="pages/KnowledgePalace/KP.html">Learn more</a>
+			</div>
+		</main>
+		<footer>
+			<div class="s-wrap"><div class="s-move">
+				<div class="slide">
+					<p>Change your thoughts and you change your world. ©Norman Vincent Peale</p>
+				</div>
+				<div class="slide">
+					<p>Education is the most powerful weapon which you can use to change the world. ©Nelson Mandela</p>
+				</div>
+				<div class="slide">
+					<p>Everything has beauty, but not everyone sees it. ©Confucius</p>
+				</div>
+				<div class="slide">
+					<p>The only true wisdom is in knowing you know nothing. ©Socrates</p>
+				</div>
+				<div class="slide">
+					<p>All our dreams can come true, if we have the courage to pursue them. ©Walt Disney</p>
+				</div>
+				<div class="slide">
+					<p>The secret of getting ahead is getting started. ©Mark Twain</p>
+				</div>
+			</div></div>
+		</footer>
+	</div>
+
+	<!-- JavaScript/Jquery -->
+	<script>
+		// Main functions
+		function projectBtn(list) {
+  			var x = document.getElementById(list);
+  			if (x.style.display === "block") {
+    			x.style.display = "none";
+  			} else {
+    			x.style.display = "block";
+  			}
+		}	
+		//Arrows
+		$('#arrow_click').click(function() {
+    		$('#sec2').css({
+        		'display' : 'grid'
+			});
+			$('.section__n1').css({
+				'display' : 'none'
+			});
+		});
+		$('#arrow_click2').click(function() {
+    		$('#sec3').css({
+        		'display' : 'grid'
+			});
+			$('.section__n1').css({
+				'display' : 'none'
+			});
+			$('.section__n2').css({
+				'display' : 'none'
+			});
+		});
+		//Other
+	</script>
+</body>
+</html>

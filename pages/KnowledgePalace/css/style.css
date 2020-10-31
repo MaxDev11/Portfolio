@@ -1,0 +1,101 @@
+html {
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Ruda', sans-serif;
+    box-sizing: border-box; 
+    background-color: black;
+} 
+* {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+} 
+.section1 {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 2.5rem 1fr;
+} 
+#home {
+    padding-left: 0.7rem;
+    padding-top: 0.7rem;
+}
+#home img:hover {
+    opacity: 0.7;
+}
+.section1__main {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.section1__main_circle {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100%;
+    animation: circle 7s infinite alternate;
+    transition-property: background, border-radius, transform, width, height, box-shadow;
+    transition-duration: 2s;
+    
+}
+.section1__main_circle ul {
+    padding-left: 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 10s;
+}
+.section1__main_circle:hover > ul {
+    opacity: 1;
+}
+.section1__main_circle ul li {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.section1__main_circle ul li a {
+    font-weight: bold;
+}
+.section1__main_circle:hover {
+    background-color: black;
+    border: solid 0.5rem white;
+    border-radius: 10%;
+    width: 32rem;
+    height: 32rem;
+    box-shadow: 0 0 20px white;
+    font-size: 3rem;
+}
+
+@keyframes circle {
+    0% {
+        opacity: 0.2; 
+        box-shadow: 0 0 0px white;
+    }
+    100% {
+        opacity: 0.99;
+        box-shadow: 0 0 20px white;
+    }
+}
+
+@media (max-width: 550px) {
+    .section1__main_circle:hover {
+        width: 18rem;
+        height: 18rem;
+        font-size: 1.2rem;
+    }
+    .section1__main_circle ul {
+        transition-duration: 5s;
+    }
+    .section1__main_circle:hover > ul {
+        opacity: 1;
+    }
+}

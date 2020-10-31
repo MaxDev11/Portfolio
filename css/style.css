@@ -1,0 +1,274 @@
+html {
+    scrollbar-width: none;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: white;
+    font-family: 'Ruda', sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+}
+.section__n1, .section__n2, .section__n3 {
+    background-color: black;
+    width: 94%;
+    padding: 0 3% 0 3%;
+}
+.menu, .section__n2, .section__n3 {
+    display: none;
+}
+.section__n1 {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+.section__n2 {
+    height: 100%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+.section__n3 {
+    grid-template-rows: 9rem 1fr 9rem;
+}
+ul, ol {
+    list-style-type: none;
+}
+
+/* Section 1 */
+.section__n1__main {
+    display: grid;
+    align-content: center;
+    font-size: 3.5rem;
+}
+.section__n1__main h1 {
+    line-height: 5.5rem;
+    margin-bottom: 0;
+    animation: appear 5s ease-in;
+}
+#text {
+    font-size: 1.1rem;
+    padding-left: 0.35rem;
+    animation: span 5s linear forwards; 
+}
+#arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+}
+#arrow img {
+    opacity: 0.5;
+    animation: arrow 7s ease;
+}
+#arrow img:hover {
+    opacity: 0.7;
+}
+#arrow_click, #arrow_click2 {
+    cursor: pointer;
+}
+@keyframes appear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes arrow {
+    0% { opacity: 0; }
+    90% { opacity: 0; }
+    100% { opacity: 0.35; }
+}
+@keyframes span {
+   0% {
+       position: relative;
+       left: 100%;
+       opacity: 0;
+   }
+   75% {
+        position: relative;
+        left: 100%;
+        opacity: 0;
+   }
+   100% {
+       position: relative;
+       left: 0%;
+       opacity: 1;
+   }
+}
+
+/* Section 2 */
+.section__n2__main {
+    display: grid;
+    font-size: 2rem;
+}
+.section__n2__main h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+.section__n2__main_p {
+    display: grid;
+    align-content: start;
+}
+.section__n2__main_p p {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 0.3rem;
+    text-align: center;
+    animation: appear 5s ease-in;
+}
+
+/* Section 3 */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+header h1 {
+    font-size: 3.5rem;
+    line-height: 3.2rem;
+}
+header h1::after {
+    display: block;
+    content: "HUMAN that likes to study and create things";
+    font-size: 0.56rem;
+    font-weight: lighter;
+    padding-left: 0.3rem;
+    line-height: 0.3rem;
+}
+.header__sm {
+    display: grid;
+    justify-content: end;
+    padding-top: 2.4rem;
+}
+.header__sm ul {
+    padding-left: 0;
+}
+.header__sm ul li {
+    display: inline;
+    padding-right: 1rem;
+}
+.header__sm ul li img {
+    border-radius: 15px;
+}
+.header__sm ul li img:hover {
+    box-shadow: 0.05rem 0.05rem 0.15rem 0.15rem white;
+}
+.header__sm input, #menuBtn {
+    display: none;
+}
+.section__n3__main {
+    text-align: center;
+}
+.main__projects {
+    padding-top: 3rem;
+}
+.main__projects ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    padding-right: 3rem;
+}
+.main__projects ul h3 {
+    padding: 0.9rem;
+    border: solid 0.1rem white;
+    border-radius: 15px;
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    transition-property: background, color;
+    transition-duration: 1s;
+}
+.main__projects ul h3:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.main__projects ol {
+    display: none;
+    background-color: white;
+    color: black;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    padding-left: 0;
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0 0 15px 15px;
+}
+.main__projects ol li {
+    padding-left: 1.5rem;
+}
+.main__projects ol li:last-child {
+    padding-top: 1.5rem;
+}
+#btn1, #btn2, #btn3, #btn4, #btn5 {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+#btn1:hover, #btn2:hover, #btn3:hover, 
+#btn4:hover, #btn5:hover {
+    opacity: 0.7;
+}
+.main__knowledge {
+    margin-top: 7.5rem;
+    margin-bottom: 3rem;
+}
+.main__knowledge h2 {
+    text-align: center;
+}
+.main__knowledge p {
+    font-size: 0.9rem;
+}
+.main__knowledge a {
+    text-decoration: none;
+    color: white;
+    border: solid 0.2rem white;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+    line-height: 4rem;
+    transition-property: background, color, padding;
+    transition-duration: 1s;
+}
+.main__knowledge a:hover {
+    background-color: white;
+    color: black;
+    padding: 1rem 1.3rem 1rem 1.3rem;
+    border-radius: 15px;
+}
+
+/* Footer section | slider */
+.s-wrap {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 3rem;
+}
+.s-move {
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.slide {
+    font-family: 'Courgette', cursive;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    flex-shrink: 0; 
+    text-align: center;
+}
+@keyframes slideh {
+    0% { right: 0; }
+    15% { right: 0; }
+    20% { right: 100%; }
+    35% { right: 100%; }
+    40% { right: 200%; }
+    55% { right: 200%; }
+    60% { right: 300%; }
+    75% { right: 300%; }
+    80% { right: 400%; }
+    95% { right: 400%; }
+    100% { right: 0; }
+}
+.s-move { animation: slideh linear 40s infinite; }
+.s-move:hover { animation-play-state: paused; }

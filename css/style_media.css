@@ -1,0 +1,125 @@
+/* Media */
+@media (max-width: 730px) {
+    .section__n2__main_p p {
+        font-size: 1rem;
+        line-height: 0.7rem;
+    }
+}
+@media (max-width: 670px) {
+    .slide {
+        font-size: 0.8rem;
+    }
+    .main__projects_sec ul {
+        grid-column: 4;
+    }
+}
+@media (max-width: 580px) {
+    .list-items {
+        display: none;
+    }
+    .header__sm input {
+        display: block;
+		position: fixed;
+        top: 3.36rem;
+        right: 2.86rem;
+		opacity: 0;
+        z-index: 20;
+    }
+    .header__sm input:checked ~ .list-items {
+        display: grid;
+        position: fixed;
+        top: 2rem;
+        right: 5rem;
+        grid-template-columns: repeat(5, 1fr);
+        animation: list-appear 3s ease;
+        z-index: 19;
+    }
+    .header__sm input:checked ~ #menuBtn {
+        animation: menuBtn 1s ease;
+        background-color: white;
+        z-index: 19;
+    }
+    .header__sm input:checked ~ .menu {
+        display: grid;
+    }
+    #menuBtn {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: solid 0.2rem white;
+        border-radius: 100%;
+        margin-top: 0.6rem;
+        margin-right: 1.6rem;
+    }
+    .menu {
+        position: fixed;
+        background-color: black;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 15%;
+        overflow: hidden;
+        animation: menuSec 2s ease;
+    }
+    .section__n2__main_p p {
+        font-size: 0.9rem;
+        line-height: 0.7rem;
+    }
+}
+@keyframes menuSec {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(10, 10);
+    }
+}
+@keyframes list-appear {
+	0% {
+		opacity: 0;
+		transform: scale(0.1);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}	
+} 
+@keyframes menuBtn {
+    from { 
+        background-color: black; 
+        transform: translate(0, 0);
+    }
+    to { 
+        background-color: white; 
+        transform: translate(10, 10);
+    }
+}
+@media (max-width: 400px) {
+    header h1::after {
+        font-size: 0.53rem;
+    }
+    .section__n1__main {
+        font-size: 2rem;
+    }
+    .section__n1__main h1 {
+        text-align: center;
+        line-height: 3.5rem;
+    }
+    #text {
+        font-size: 0.65rem;
+    }
+    .section__n2__main {
+        font-size: 1.5rem;
+    }
+    #arrow_click, #arrow_click2 {
+        width: 3rem;
+        height: 5rem;
+    }
+}
+@media (max-width: 350px) {
+    .slide {
+        font-size: 0.65rem;
+    }
+}
