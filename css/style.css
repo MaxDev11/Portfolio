@@ -114,7 +114,9 @@ ul, ol {
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
     font-size: 1.3rem;
-    line-height: 0.3rem;
+    line-height: 1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
     text-align: center;
     animation: appear 5s ease-in;
 }
