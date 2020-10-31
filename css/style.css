@@ -50,7 +50,7 @@ ul, ol {
 }
 #text {
     font-size: 1.1rem;
-    padding-left: 0.45rem;
+    padding-left: 0.5rem;
     animation: span 5s linear forwards; 
 }
 #arrow {
