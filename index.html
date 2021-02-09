@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+	<!-- Meta and Title -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 	<meta http-equiv="X-UA-Compatible" content="id=edge">
 	<meta name="author" content="MaxML">
-	<meta name="description" content="MaxML portfolio">
+	<meta name="description" content="MaxML's portfolio">
 	<meta name="keywords" content="MaxML, portfolio, music, CS, programming, Tech, Drawing, Max, Art">
-	<link rel="shortcut icon" type="image/png" href="css/img/Icon.png">
 	<title>MaxML</title>
-	<script src="js/jquery-3.5.1.min.js"></script>
-	<script src="js/anime-master/lib/anime.min.js"></script>
+
+	<!-- Links and Scripts -->
+	<link rel="shortcut icon" type="image/png" href="css/img/Icon.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style_media.css">
 	<link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/anime-master/lib/anime.min.js"></script>
+
 </head>
 <body>
+
 	<!-- Section 1 -->
-	<div class="section__n1">
+	<section class="section__n1">
 		<main class="section__n1__main">
 			<h1>MaxML</h1>
 			<span id="text">HUMAN that likes to study and create things</span>
@@ -27,37 +33,38 @@
 		<span id="arrow"><a href="#sec2">
 			<img id="arrow_click" src="css/img/Arrow.png" alt="ArrowImg"></a>
 		</span>
-	</div>
+	</section>
+
 	<!-- Section 2 -->
-	<div class="section__n2" id="sec2">
+	<section class="section__n2" id="sec2">
 		<main class="section__n2__main">
 			<h1>About me</h1>
-			<div class="section__n2__main_p">
+			<section class="section__n2__main_p">
 				<p>Well...</p>
-				<p>My name is Max, as you may have already realized from my title</p>
-				<p>I like to study a lot of different things that I'm interested in,</p>
-				<p>Making my ideas come true and creating stuff in various areas</p>
-				<p>Such as, basically, everything digital ( Computer Science, Programming, Tech ),</p>
-				<p>Music, Design, Engineering, Art in general, and other.</p>
+				<p>My name is Max, as you may have already realized from my title.</p>
+				<p>I like to study a lot of different things that I'm interested in.</p>
+				<p>Making my ideas come true and creating stuff in various areas,</p>
+				<p>Such as basically everything digital (ComputerScience, Programming, Tech),</p>
+				<p>Music, Design, Engineering, Art in general and other.</p>
 				<p>I created this Website as my Portfolio-Platform</p>
-				<p>For all the ideas that I come up with and create</p>
-			</div>
+				<p>For all the ideas that I come up with and create.</p>
+			</section>
 		</main>
 		<span id="arrow"><a href="#sec3"><img id="arrow_click2" src="css/img/Arrow.png" alt="ArrowImg"></a></span>
-	</div>
+	</section>
 
 	<!-- Section 3 -->
-	<div class="section__n3" id="sec3" name="timeline">
+	<section class="section__n3" id="sec3" name="timeline">
 		<header>
-			<div class="header__icon">
+			<section class="header__icon">
 				<h1>MaxML</h1>
-			</div>
+			</section>
 			<nav class="header__sm">
 				<input type="checkbox" id="input">
 				<span id="menuBtn"></span>
 				<div class="menu"></div>
 				<ul class="list-items">
-					<li><a href="https://youtube.com/channel/UCZAXhZ1tG8_Dx3i76aW0x-g" target="_blank" id="sm1">
+					<li><a href="https://www.youtube.com/channel/UChuGfBqP09My3A3iImHgtmw" target="_blank" id="sm1">
 						<img src="css/img/SM/YouTube.png" alt="YoutubeIcon"></a></li>
 					<li><a href="https://github.com/MaxDev11" target="_blank" id="sm2">
 						<img src="css/img/SM/Github.png" alt="GithubIcon"></a></li>
@@ -71,7 +78,7 @@
 			</nav>
 		</header>
 		<main class="section__n3__main">
-			<div class="main__projects">
+			<section class="main__projects">
 				<h2>My Projects</h2>
 				<ul>
 					<li>
@@ -125,13 +132,13 @@
 						</ol>
 					</li>
 				</ul>
-			</div>
-			<div class="main__knowledge">
+			</section>
+			<section class="main__knowledge">
 				<h2>Knowledge Palace</h2>
 				<p>This section is my collection of knowledge, sources on different topics</p>
 				<p>As the time goes I'll be adding new information and updating old</p>
 				<a href="pages/KnowledgePalace/KP.html">Learn more</a>
-			</div>
+			</section>
 		</main>
 		<footer>
 			<div class="s-wrap"><div class="s-move">
@@ -155,11 +162,11 @@
 				</div>
 			</div></div>
 		</footer>
-	</div>
+	</section>
 
 	<!-- JavaScript/Jquery -->
 	<script>
-		// Main functions
+		// Main function
 		function projectBtn(list) {
   			var x = document.getElementById(list);
   			if (x.style.display === "block") {
@@ -167,7 +174,7 @@
   			} else {
     			x.style.display = "block";
   			}
-		}	
+		}
 		//Arrows
 		$('#arrow_click').click(function() {
     		$('#sec2').css({
@@ -188,7 +195,7 @@
 				'display' : 'none'
 			});
 		});
-		//Other
 	</script>
+
 </body>
 </html>
