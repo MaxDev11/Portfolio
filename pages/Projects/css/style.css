@@ -36,7 +36,7 @@ main {
     grid-template-rows: 8rem 1fr 11rem;
     justify-content: center;
 }
-main h1 {
+main h2 {
     text-align: center;
     font-size: 3.5rem;
 }
@@ -57,7 +57,7 @@ main h1 {
     border-radius: 15px;
     color: black;
 }
-.main__list_sec span {
+.main__list_sec h3 {
     font-size: 1.15rem;
     font-weight: bold;
     background-color: black;
@@ -65,9 +65,10 @@ main h1 {
     border: solid 0.1rem white;
     border-radius: 0 0 15px 15px;
     padding-top: 0.25rem;
-    cursor: default;
+    /* cursor: default; */
+    margin: 0;
 }
-.main__list_sec span, .main__list_sec p {
+.main__list_sec h3, .main__list_sec p {
     text-align: center;
 }
 .n2, .n3, .n4, .n5, .n6 {
