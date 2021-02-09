@@ -1,7 +1,7 @@
 /* Media */
-@media (max-width: 730px) {
+@media (max-width: 920px) {
     .section__n2__main_p p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 @media (max-width: 670px) {
@@ -60,9 +60,6 @@
         overflow: hidden;
         animation: menuSec 2s ease;
     }
-    .section__n2__main_p p {
-        font-size: 0.9rem;
-    }
 }
 @keyframes menuSec {
     0% {
@@ -94,12 +91,12 @@
         transform: translate(10, 10);
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     header h1::after {
         font-size: 0.53rem;
     }
     .section__n1__main {
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
     .section__n1__main h1 {
         text-align: center;
@@ -109,7 +106,10 @@
         font-size: 0.65rem;
     }
     .section__n2__main {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+    .section__n2__main_p p {
+        font-size: 0.9rem;
     }
     #arrow_click, #arrow_click2 {
         width: 3rem;
